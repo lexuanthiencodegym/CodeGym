@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CHUYỂN ĐỔI TIỀN TỆ</title>
+</head>
+<body>
+	<form action="">
+		&emsp; &emsp; Amount &emsp; &emsp; &emsp; From Currency &emsp; &emsp; &emsp; To Currency <br>
+	<input type="text" id="sotien" placeholder="Nhập Số Tiền">
+	&emsp;
+	<select id="tiente">
+		<option value="=vnd">VietNam</option>
+	
+    </select>
+    &emsp;
+    &emsp; &emsp;
+    <select id="tienmy">
+    	<option value="=usa">USA</option> 	
+    </select>
+    &emsp; &emsp;
+    <button type="button" onclick="convert();">Convert</button>
+    <p id="ketqua"></p>
+    </form>
+
+    <script type="">
+    	function convert() {
+    	var sotien = document.getElementById('sotien');
+    	var giatri = parseInt(sotien.value)/23000;
+
+    	var ketqua = document.getElementById('ketqua');
+    	ketqua.innerHTML = giatri + 'USA';
+
+    		// body...
+    	}
+    	
+    </script>
+    </form>	
+
+
+</body>
+</html>
