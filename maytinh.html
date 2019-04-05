@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MÁY TÍNH TOÁN</title>
+</head>
+<body>
+	<FORM name="maytinh" action="javascript:void(0);">
+
+		<input type="text" name="giatrithunhat"> &nbsp;
+		<input type="text" name="giatrithuhai"> <br> <br>
+		
+		<button onclick="phepcong();">Addition(+)</button>
+		<button onclick="pheptru();">Subtraction(-)</button>
+		<button onclick="phepnhan();">Multiplication(x)</button>
+		<button onclick="phepchia();">Division(/)</button> <br>
+	<h4 id="ketqua">Kết Quả:</h4>
+	</FORM>
+	<script>
+		function phepcong() {
+			var a = parseFloat(document.forms["maytinh"]["giatrithunhat"].value);
+			var b = parseFloat(document.forms["maytinh"]["giatrithuhai"].value);
+			var result = a + b;
+			document.getElementById('ketqua').innerHTML='Kết Quả:' + result;
+		}
+
+		function pheptru() {
+			var a = parseFloat(document.forms["maytinh"]["giatrithunhat"].value);
+			var b = parseFloat(document.forms["maytinh"]["giatrithuhai"].value);
+			var result = a - b;
+			document.getElementById('ketqua').innerHTML='Kết Quả:'+result;
+			// body...
+		}
+
+		function phepnhan() {
+			var a = parseFloat(document.forms["maytinh"]["giatrithunhat"].value);
+			var b = parseFloat(document.forms["maytinh"]["giatrithuhai"].value);
+			var result = a * b;
+			document.getElementById('ketqua').innerHTML='Kết Quả:'+result;
+			// body...
+		}
+		function phepchia() {
+			var a = parseFloat(document.forms["maytinh"]["giatrithunhat"].value);
+			var b = parseFloat(document.forms["maytinh"]["giatrithuhai"].value);
+			if (b == 0)
+				alert("LỖI");
+			else {
+				var result = a / b;
+			document.getElementById('ketqua').innerHTML='Kết Quả:'+result;
+			}
+			
+			// body...
+		}
+
+			// body...
+		
+	</script>
+
+
+
+</body>
+</html>
